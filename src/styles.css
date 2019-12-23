@@ -1,4 +1,40 @@
+body{
+  background-color: #282827;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
+  
 }
+.App h1{
+  color: #E25D33;
+}
+.App ul{
+  margin: 0 auto;
+  width: 500px;
+}
+.App ul li{ 
+  margin-top: 5px;
+  
+  border: 3px solid #DCD8CF;
+}
+form div{
+  border: 3px solid #DCD8CF;
+}
+div.MuiInputBase-root-53{
+  color: #E25D33;
+}
+span.MuiTypography-root-1{
+  color: #E25D33;
+}
+form div div{
+  width: 500px;
+}
+svg.MuiSvgIcon-root-109{
+  color: #E25D33;
+}
+/*
+#DCD8CF
+#E25D33
+#282827
+*/

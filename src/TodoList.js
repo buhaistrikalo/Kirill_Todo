@@ -6,12 +6,17 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Checkbox from '@material-ui/core/Checkbox';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
+import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
 
 const TodoList = ({ todos, deleteTodo }) => (
   <List>
     {todos.map((todo, index) => (
       <ListItem key={index.toString()} dense button>
-        <Checkbox tabIndex={-1} disableRipple />
+        <Checkbox 
+          tabIndex={-1} 
+          disableRipple 
+          icon={<CheckBoxOutlineBlankIcon fontSize="big" />}
+        />
         <ListItemText primary={todo} />
         <ListItemSecondaryAction>
           <IconButton
@@ -27,5 +32,7 @@ const TodoList = ({ todos, deleteTodo }) => (
     ))}
   </List>
 );
+
+
 
 export default TodoList;

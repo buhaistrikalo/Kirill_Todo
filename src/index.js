@@ -6,6 +6,7 @@ import TodoList from './TodoList';
 import useTodoState from './useTodoState';
 import './styles.css';
 
+
 const App = () => {
   const { todos, addTodo, deleteTodo } = useTodoState([]);
 
@@ -14,7 +15,6 @@ const App = () => {
       <Typography component="h1" variant="h2">
         Kirill Todo
       </Typography>
-
       <TodoForm
         saveTodo={todoText => {
           const trimmedText = todoText.trim();
@@ -24,7 +24,6 @@ const App = () => {
           }
         }}
       />
-
       <TodoList todos={todos} deleteTodo={deleteTodo} />
     </div>
   );

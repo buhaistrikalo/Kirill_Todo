@@ -10,8 +10,12 @@ export default initialValue => {
     },
     deleteTodo: todoIndex => {
       const newTodos = todos.filter((_, index) => index !== todoIndex);
-
-      setTodos(newTodos);
+    setTodos(newTodos);
+    },
+    deleteAllDoneTodo: delTodo => {
+      const newTodos = todos.filter(todo => console.log(todo));
+    console.log(newTodos);
+    //setTodos(newTodos);
     }
   };
 };

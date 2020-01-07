@@ -4,11 +4,12 @@ import Typography from '@material-ui/core/Typography';
 import TodoForm from './TodoForm';
 import TodoList from './TodoList';
 import useTodoState from './useTodoState';
+import Button from '@material-ui/core/Button';
 import './styles.css';
 
 
 const App = () => {
-  const { todos, addTodo, deleteTodo } = useTodoState([]);
+  const { todos, addTodo, deleteTodo, deleteAllDoneTodo } = useTodoState([]);
 
   return (
     <div className="App">
@@ -25,6 +26,15 @@ const App = () => {
         }}
       />
       <TodoList todos={todos} deleteTodo={deleteTodo} />
+      <Button 
+        variant="contained" 
+        color="primary"
+        onClick={() => {
+          deleteAllDoneTodo(true);
+        }}
+      >
+        Удалить выполненные
+      </Button>
     </div>
   );
 };

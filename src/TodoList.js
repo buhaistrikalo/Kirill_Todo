@@ -15,6 +15,7 @@ const TodoList = ({ todos, deleteTodo }) => (
         <Checkbox 
           tabIndex={-1} 
           disableRipple 
+          color="primary"
           icon={<CheckBoxOutlineBlankIcon fontSize="big" />}
         />
         <ListItemText primary={todo} />
